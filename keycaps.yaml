@@ -1,0 +1,194 @@
+grid:
+    - - transpose sexps
+      - copy sexp
+      - kill sexp
+      - mark sexp
+      - del back
+      - del blanks
+      - one space
+      - no space
+    - - up sexp
+      - back sexp
+      - forward sexp
+      - down sexp
+      - minus
+      - twice
+      - thrice
+      - five times
+    - - narrow defun
+      - beg defun
+      - end defun
+      - mark defun
+      - undo
+      - repeat
+      - eval
+      - newline
+    - - change paren
+      - raise sexp
+      - insert parens
+      - insert quotes
+      - back sent
+      - back word
+      - fwd word
+      - fwd sent
+    - - wander yank
+      - wander
+      - exit
+      - pickup
+      - buffer menu
+      - next buffer
+      - other window
+      - other frame
+    - - kill region
+      - copy region
+      - yank
+      - yank pop
+      - beg buffer
+      - in-out str
+      - go to name
+      - end buffer
+keycaps:
+    transpose sexps:
+      - text: ( )⇄( )
+    copy sexp:
+      - text: ( )
+      - x: 12
+        y: 12
+        text: ( )
+    kill sexp:
+      - text: ( )
+      - text: ❌
+    mark sexp:
+      - text: ()
+      - font-size: 32px
+        text: □
+    up sexp:
+      - text: ( )
+      - text: ←
+    back sexp:
+      - text: ( )
+      - text: "↶"
+    forward sexp:
+      - text: ( )
+      - text: "↷"
+    down sexp:
+      - text: ( )
+      - text: →
+    narrow defun:
+      - text: "|{}|"
+    beg defun:
+      - text: "{← }"
+    end defun:
+      - text: "{ →}"
+    mark defun:
+      - text: { }
+      - font-size: 32px
+        text: □
+    change paren:
+      - x: 0
+        y: 0
+        text: "[]"
+      - x: 24
+        y: 0
+        text: "{}"
+      - x: 24
+        y: 24
+        text: "()"
+      - x: 0
+        y: 24
+        text: "&lt;&gt;"
+    raise sexp:
+      - x: 6
+        text: ( ( ) )
+      - y: -6
+        x: 6
+        text: ↖
+      - x: 30
+        y: -6
+        text: ↗
+    insert parens:
+      - text: (⎀)
+    insert quotes:
+      - text: "⎀"
+    wander yank:
+      - text: 🫗
+    wander:
+      - text: 🔖
+    exit:
+      - text: 🪃
+    pickup:
+      - text: 🪝
+    kill region:
+      - text: ❌
+    copy region:
+      - text: □
+      - x: 12
+        y: 12
+        text: ⬚
+    yank:
+      - text: ‸
+    yank pop:
+      - text: ‸→‸→‸
+    del back:
+      - text: DEL
+    del blanks:
+      - text: ⤒
+    one space:
+      - text: ␣
+    no space:
+      - text: ␣
+      - text: ❌
+    minus:
+      - text: negative
+    twice:
+      - text: 2 ×
+    thrice:
+      - text: 3 ×
+    five times:
+      - text: 5 ×
+    undo:
+      - text: undo
+    repeat:
+      - text: repeat
+    eval:
+      - text: eval
+    newline:
+      - text: ⮒
+    back sent:
+      - text: Abc def.
+      - y: 30
+        font-size: 50
+        text: ←
+    back word:
+      - text: abc
+      - y: 18
+        font-size: 30
+        text: ←
+    fwd word:
+      - text: abc
+      - y: 18
+        font-size: 30
+        text: →
+    fwd sent:
+      - text: Abc def.
+      - y: 30
+        font-size: 50
+        text: →
+    buffer menu:
+      - text: ≡
+    next buffer:
+      - text: □ → □
+    other window:
+      - text: 🪟 → 🪟
+    other frame:
+      - text: 🪟🪟 → 🪟🪟
+    beg buffer:
+      - text: ⇱
+    in-out str:
+      - text: " "
+      - text: 
+    go to name:
+      - text: ● { }
+    end buffer:
+      - text: ⇲
+    
